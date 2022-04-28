@@ -1,0 +1,37 @@
+from django.urls import path,include
+from . import views
+urlpatterns = [
+    path("Indexpage/",views.IndexPage,name="index.html"),
+    path("activitypage/",views.activitypage,name="activity.html"),
+    path("articlepage/",views.articalpage,name="artical.html"),
+    path("blogpage/",views.blogpage,name="blog.html"),
+    path("chatpage/",views.chatpage,name="chat.html"),
+    path("collectionpage/",views.collectionpage,name="collection.html"),
+    path("contactpage/",views.contactpage,name="contact.html"),
+    path("creatorepage/",views.creatorepage,name="creatore.html"),
+    path("editprofilepage/",views.editprofilepage,name="editprofile.html"),
+    path("faqpage/",views.faqpage,name="faq.html"),
+    path("headerpage/",views.headerpage,name="header.html"),
+    path("index2darkpage/",views.index2darkpage,name="index2dark.html"),
+    path("index2page/",views.index2page,name="index2"),
+    path("index3darkpage/",views.index3darkpage,name="index3dark.html"),
+    path("index3page/",views.index3page,name="index3.html"),
+    path("index4darkpage/",views.index4darkpage,name="index4dark.html"),
+    path("index4page/",views.index4page,name="index4.html"),
+    path("indexdarkpage/",views.indexdarkpage,name="indexdark.html"),
+    path("indexpage/",views.indexpage,name="index.html"),
+    path("itemdetailspage/",views.itemdetailspage,name="itemdetails.html"),
+    path("loginpage/",views.loginpage,name="login.html"),
+    path("newsletterpage/",views.newsletterpage,name="newsletter.html"),
+    path("postdetailpage/",views.postdetailpage,name="postdetail.html"),
+    path("privacypage/",views.privacypage,name="privacy.html"),
+    path("profilepage/",views.profilepage,name="profile.html"),
+    path("rankingpage/",views.rankingpage,name="ranking.html"),
+    path("registerpage/",views.registerpage,name="register.html"),
+    path("submitrequestpage/",views.submitrequestpage,name="submitrequest.html"),
+    path("walletpage/",views.walletpage,name="wallet.html"),
+    path("registeruser/",views.RegisterUser,name="register"),   
+    path("loginuser/",views.LoginUser,name="loginuser"),
+    
+ 
+]

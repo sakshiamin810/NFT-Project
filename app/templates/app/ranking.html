@@ -1,0 +1,785 @@
+
+
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- start section -->
+    <section class="ranking section bg-light">
+        <!-- start container -->
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb default mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="text-muted">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active text-primary" aria-current="page">Ranking</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <div class="inner-heading text-center">
+                        <div class="mt-4">
+                            <h1 class="fw-bold">Ranking NFT</h1>
+                            <P class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut odio dolores,
+                                soluta eius incidunt perferendis? Repellat necessitatibus.</P>
+                        </div>
+                    </div>
+
+                    <div class="heading-bottom-icon d-flex justify-content-center text-center">
+                        <i class="mdi mdi-image-filter-vintage"></i>
+                        <i class="mdi mdi-image-filter-vintage mx-2"></i>
+                        <i class="mdi mdi-image-filter-vintage"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-12">
+                    <ul class="nav nav-pills align-items-center mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active f-20" id="pills-games-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-games" type="button" role="tab" aria-controls="pills-games"
+                                aria-selected="true"><i class="mdi mdi-gamepad-variant f-24 align-middle"></i>
+                                Games</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link f-20" id="pills-art-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-art" type="button" role="tab" aria-controls="pills-art"
+                                aria-selected="false"><i class="mdi mdi-brush f-24 align-middle"></i> Art</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link f-20" id="pills-tranding-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tranding" type="button" role="tab" aria-controls="pills-tranding"
+                                aria-selected="false"><i class="mdi mdi-chart-line f-24 align-middle"></i>
+                                Tranding</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link f-20" id="pills-music-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-music" type="button" role="tab" aria-controls="pills-music"
+                                aria-selected="false"><i class="mdi mdi-music f-24 align-middle"></i> Music</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link f-20" id="pills-domain-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-domain" type="button" role="tab" aria-controls="pills-domain"
+                                aria-selected="false"><i class="mdi mdi-web f-24 align-middle"></i> Domain</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link f-20" id="pills-memes-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-memes" type="button" role="tab" aria-controls="pills-memes"
+                                aria-selected="false"><i class="mdi mdi-face f-24 align-middle"></i> Memes</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-games" role="tabpanel"
+                            aria-labelledby="pills-games-tab">
+                            <div class="table-responsive">
+                                <table class="table table-borderless table-nowrap">
+                                    <thead>
+                                        <tr class="table-title">
+                                            <th scope="col">Collection</th>
+                                            <th scope="col">Volume</th>
+                                            <th scope="col">24 H %</th>
+                                            <th scope="col">1 Week %</th>
+                                            <th scope="col">Owners</th>
+                                            <th scope="col">Employe</th>
+                                            <th scope="col">Floor Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-1.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Creative Game collection</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1241</td>
+                                            <td class="text-success">+1245%</td>
+                                            <td class="text-danger">-210%</td>
+                                            <td>1.2K</td>
+                                            <td>20K</td>
+                                            <td>12, 3211 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-2.png" alt=""
+                                                                class="avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Colorful Abstract Painting</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 3214</td>
+                                            <td class="text-success">+6212%</td>
+                                            <td class="text-danger">-512%</td>
+                                            <td>1.4K</td>
+                                            <td>51K</td>
+                                            <td>21, 4512 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-3.png" alt=""
+                                                                class="avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">The girl with the firefly</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>45, 5245</td>
+                                            <td class="text-success">+3841%</td>
+                                            <td class="text-danger">-230%</td>
+                                            <td>3.2K</td>
+                                            <td>26K</td>
+                                            <td>29, 6911 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-4.png" alt=""
+                                                                class="avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">4</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Dodo hide the seek</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1285</td>
+                                            <td class="text-success">+6854%</td>
+                                            <td class="text-danger">-320%</td>
+                                            <td>2.5K</td>
+                                            <td>50K</td>
+                                            <td>32, 5387 ETH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-art" role="tabpanel" aria-labelledby="pills-art-tab">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr class="table-title">
+                                            <th scope="col">Collection</th>
+                                            <th scope="col">Volume</th>
+                                            <th scope="col">24 H %</th>
+                                            <th scope="col">1 Week %</th>
+                                            <th scope="col">Owners</th>
+                                            <th scope="col">Employe</th>
+                                            <th scope="col">Floor Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-5.png" alt=""
+                                                                class="avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Creative Game collection</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1241</td>
+                                            <td class="text-success">+1245%</td>
+                                            <td class="text-danger">-210%</td>
+                                            <td>1.2K</td>
+                                            <td>20K</td>
+                                            <td>12, 3211 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-6.png" alt=""
+                                                                class="avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Colorful Abstract Painting</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 3214</td>
+                                            <td class="text-success">+6212%</td>
+                                            <td class="text-danger">-512%</td>
+                                            <td>1.4K</td>
+                                            <td>51K</td>
+                                            <td>21, 4512 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-7.png" alt=""
+                                                                class="avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">The girl with the firefly</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>45, 5245</td>
+                                            <td class="text-success">+3841%</td>
+                                            <td class="text-danger">-230%</td>
+                                            <td>3.2K</td>
+                                            <td>26K</td>
+                                            <td>29, 6911 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-8.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">4</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Dodo hide the seek</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1285</td>
+                                            <td class="text-success">+6854%</td>
+                                            <td class="text-danger">-320%</td>
+                                            <td>2.5K</td>
+                                            <td>50K</td>
+                                            <td>32, 5387 ETH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-tranding" role="tabpanel"
+                            aria-labelledby="pills-tranding-tab">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr class="table-title">
+                                            <th scope="col">Collection</th>
+                                            <th scope="col">Volume</th>
+                                            <th scope="col">24 H %</th>
+                                            <th scope="col">1 Week %</th>
+                                            <th scope="col">Owners</th>
+                                            <th scope="col">Employe</th>
+                                            <th scope="col">Floor Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-1.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Creative Game collection</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1241</td>
+                                            <td class="text-success">+1245%</td>
+                                            <td class="text-danger">-210%</td>
+                                            <td>1.2K</td>
+                                            <td>20K</td>
+                                            <td>12, 3211 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-2.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Colorful Abstract Painting</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 3214</td>
+                                            <td class="text-success">+6212%</td>
+                                            <td class="text-danger">-512%</td>
+                                            <td>1.4K</td>
+                                            <td>51K</td>
+                                            <td>21, 4512 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-3.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">The girl with the firefly</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>45, 5245</td>
+                                            <td class="text-success">+3841%</td>
+                                            <td class="text-danger">-230%</td>
+                                            <td>3.2K</td>
+                                            <td>26K</td>
+                                            <td>29, 6911 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-4.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">4</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Dodo hide the seek</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1285</td>
+                                            <td class="text-success">+6854%</td>
+                                            <td class="text-danger">-320%</td>
+                                            <td>2.5K</td>
+                                            <td>50K</td>
+                                            <td>32, 5387 ETH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-music" role="tabpanel" aria-labelledby="pills-music-tab">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr class="table-title">
+                                            <th scope="col">Collection</th>
+                                            <th scope="col">Volume</th>
+                                            <th scope="col">24 H %</th>
+                                            <th scope="col">1 Week %</th>
+                                            <th scope="col">Owners</th>
+                                            <th scope="col">Employe</th>
+                                            <th scope="col">Floor Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-5.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Creative Game collection</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1241</td>
+                                            <td class="text-success">+1245%</td>
+                                            <td class="text-danger">-210%</td>
+                                            <td>1.2K</td>
+                                            <td>20K</td>
+                                            <td>12, 3211 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-6.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Colorful Abstract Painting</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 3214</td>
+                                            <td class="text-success">+6212%</td>
+                                            <td class="text-danger">-512%</td>
+                                            <td>1.4K</td>
+                                            <td>51K</td>
+                                            <td>21, 4512 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-7.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">The girl with the firefly</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>45, 5245</td>
+                                            <td class="text-success">+3841%</td>
+                                            <td class="text-danger">-230%</td>
+                                            <td>3.2K</td>
+                                            <td>26K</td>
+                                            <td>29, 6911 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/user/img-8.jpg" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">4</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Dodo hide the seek</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1285</td>
+                                            <td class="text-success">+6854%</td>
+                                            <td class="text-danger">-320%</td>
+                                            <td>2.5K</td>
+                                            <td>50K</td>
+                                            <td>32, 5387 ETH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-domain" role="tabpanel" aria-labelledby="pills-domain-tab">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr class="table-title">
+                                            <th scope="col">Collection</th>
+                                            <th scope="col">Volume</th>
+                                            <th scope="col">24 H %</th>
+                                            <th scope="col">1 Week %</th>
+                                            <th scope="col">Owners</th>
+                                            <th scope="col">Employe</th>
+                                            <th scope="col">Floor Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-5.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Creative Game collection</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1241</td>
+                                            <td class="text-success">+1245%</td>
+                                            <td class="text-danger">-210%</td>
+                                            <td>1.2K</td>
+                                            <td>20K</td>
+                                            <td>12, 3211 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-6.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Colorful Abstract Painting</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 3214</td>
+                                            <td class="text-success">+6212%</td>
+                                            <td class="text-danger">-512%</td>
+                                            <td>1.4K</td>
+                                            <td>51K</td>
+                                            <td>21, 4512 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-7.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">The girl with the firefly</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>45, 5245</td>
+                                            <td class="text-success">+3841%</td>
+                                            <td class="text-danger">-230%</td>
+                                            <td>3.2K</td>
+                                            <td>26K</td>
+                                            <td>29, 6911 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-8.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">4</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Dodo hide the seek</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1285</td>
+                                            <td class="text-success">+6854%</td>
+                                            <td class="text-danger">-320%</td>
+                                            <td>2.5K</td>
+                                            <td>50K</td>
+                                            <td>32, 5387 ETH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-memes" role="tabpanel" aria-labelledby="pills-memes-tab">
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead>
+                                        <tr class="table-title">
+                                            <th scope="col">Collection</th>
+                                            <th scope="col">Volume</th>
+                                            <th scope="col">24 H %</th>
+                                            <th scope="col">1 Week %</th>
+                                            <th scope="col">Owners</th>
+                                            <th scope="col">Employe</th>
+                                            <th scope="col">Floor Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-5.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">1</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Creative Game collection</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1241</td>
+                                            <td class="text-success">+1245%</td>
+                                            <td class="text-danger">-210%</td>
+                                            <td>1.2K</td>
+                                            <td>20K</td>
+                                            <td>12, 3211 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-6.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">2</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Colorful Abstract Painting</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 3214</td>
+                                            <td class="text-success">+6212%</td>
+                                            <td class="text-danger">-512%</td>
+                                            <td>1.4K</td>
+                                            <td>51K</td>
+                                            <td>21, 4512 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-7.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">3</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">The girl with the firefly</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>45, 5245</td>
+                                            <td class="text-success">+3841%</td>
+                                            <td class="text-danger">-230%</td>
+                                            <td>3.2K</td>
+                                            <td>26K</td>
+                                            <td>29, 6911 ETH</td>
+                                        </tr>
+                                        <tr class="rank-profile">
+                                            <th scope="row">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="flex-shrink-0">
+                                                        <div class="avatar position-relative">
+                                                            <img src="images/inner-image/ranking/img-8.png" alt=""
+                                                                class=" avatar-lg rounded">
+
+                                                            <span
+                                                                class="number position-absolute bottom-0 start-100 translate-middle-x p-2 bg-primary border border-light rounded-circle">4</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-grow-1 ms-3">
+                                                        <p class="mb-0 fw-bold">Dodo hide the seek</p>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>21, 1285</td>
+                                            <td class="text-success">+6854%</td>
+                                            <td class="text-danger">-320%</td>
+                                            <td>2.5K</td>
+                                            <td>50K</td>
+                                            <td>32, 5387 ETH</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    {% endblock %}
+    

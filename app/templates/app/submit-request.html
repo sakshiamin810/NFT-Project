@@ -1,0 +1,108 @@
+
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- start section -->
+    <section class="home section bg-light overflow-hidden">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-xxl-end justify-content-center">
+                <div class="col-lg-8">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb default mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="text-muted">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active text-primary" aria-current="page">Submit Reqeust</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            
+            <div class="row justify-content-xxl-end justify-content-center">
+                <div class="col-lg-8">
+                    <div class="inner-heading text-start">
+                        <div class="mt-5">
+                            <h1 class="fw-bold">Reqeust</h1>
+                            <P class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aut odio dolores,
+                                <br>soluta eius incidunt perferendis? Repellat necessitatibus.</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <form class="mt-2 ">
+                <div class="row justify-content-xxl-end justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="info-box">
+                            <h4 class="fw-bold">Account Info <i
+                                    class="mdi mdi-information-outline f-30 align-middle"></i></h4>
+                            <div class=" mt-4">
+                                <div class="mt-4">
+                                    <div class="Name">
+                                        <div class="d-flex">
+                                            <label for="validationDefault03" class="form-label fw-semibold"> Email
+                                                :</label>
+                                            <p class="mb-0 f-14 text-muted ms-auto">Enter Valid Email * mickel@gmail.com
+                                            </p>
+                                        </div>
+                                        <input type="text" class="form-control" id="validationDefault03"
+                                            placeholder="Enter Your Email" required>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="Name">
+                                        <label for="validationDefault001" class="form-label fw-semibold"> Subject
+                                            :</label>
+                                        <input type="text" class="form-control" id="validationDefault001" placeholder=""
+                                            value="" required>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="Name">
+                                        <label for="validationDefault03" class="form-label fw-semibold"> Description
+                                            :</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="Name">
+                                        <label for="validationDefault002" class="form-label fw-semibold"> Category
+                                            :</label>
+                                        <input type="number" class="form-control" id="validationDefault002"
+                                            placeholder="" value="" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="submit-button mt-4">
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="request-image position-absolute top-0 start-0 p-0">
+                    <img src="images/inner-image/submit-req.png" alt="" class="img-fluid">
+                </div>
+
+            </form>
+
+        </div>
+        <!-- end container -->
+    </section>
+
+    {% endblock %}
+    
+     

@@ -1,0 +1,709 @@
+
+{% extends 'app/header.html' %}
+{% block content %}
+{% load static %}
+
+
+    <!-- start home -->
+    <section class="home-2 overflow-hidden"
+        style="background-image: url(./images/bg-2.png); background-repeat: no-repeat;" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="home-content-2 home-heading text-start">
+                        <h1 class="fw-bold"> Enjoy Your <span class="text-primary"> Live </span> Auction With NFT</h1>
+                        <form class="search-form">
+                            <div class="mb-3 row">
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control position-relative" id="inputPassword"
+                                        placeholder="Search here...">
+                                    <div class="search-icon">
+                                        <i class="mdi mdi-magnify f-22"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="count-detail">
+                            <div class="row mt-4">
+                                <div class="col-lg-4 col-6">
+                                    <div class="counter-box">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <h6 class="me-1">Artwork </h6>
+                                            <h6>(<span class="counter_value fw-bold" data-bs-target="310">0</span>)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="counter-box">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <h6 class="me-1">Collection </h6>
+                                            <h6>(<span class="counter_value fw-bold" data-bs-target="450">0</span>)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-6">
+                                    <div class="counter-box">
+                                        <div class="d-flex align-items-center justify-content-start">
+                                            <h6 class="me-1">Digital Art </h6>
+                                            <h6>(<span class="counter_value fw-bold" data-bs-target="244">0</span>)</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clientslider-2 mt-5 position-relative" id="clientslider-2">
+                        <div class="item">
+                            <div class="card">
+                                <div class="header d-flex">
+                                    <div class="dropdown menu">
+                                        <i class="mdi mdi-dots-vertical f-20" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown"></i>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="badge rounded-pill">Artwork</div>
+                                    </div>
+                                </div>
+                                <div class="card-image mt-3">
+                                    <img src="{% static '/images/slider-blog/1.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Evolved Reality</h6>
+                                    <p class="f-14 text-orange">121 ETH</p>
+
+                                    <div class="profile-content align-items-center d-flex justify-content-start">
+                                        <div class="avatar-sm">
+                                            <img src="{% static '/images/slider/user/img-1.jpg' %}" alt="" class="img-fluid avatar-sm">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h6 class="fw-bold mb-0 ms-2 f-14">Kristin Watson</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item ">
+                            <div class="card">
+                                <div class="header d-flex">
+                                    <div class="dropdown menu">
+                                        <i class="mdi mdi-dots-vertical f-20" id="dropdownMenuButton01"
+                                            data-bs-toggle="dropdown"></i>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton01">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="badge rounded-pill">Painting</div>
+                                    </div>
+                                </div>
+                                <div class="card-image mt-3">
+                                    <img src="{% static '/images/slider-blog/2.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Evolved Reality</h6>
+                                    <p class="f-14 text-orange">120 ETH</p>
+
+                                    <div class="profile-content align-items-center d-flex justify-content-start">
+                                        <div class="avatar-sm">
+                                            <img src="{% static '/images/slider/user/img-2.jpg' %}" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h6 class="fw-bold mb-0 ms-2 f-14">Kristin Watson</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item ">
+                            <div class="card">
+                                <div class="header d-flex">
+                                    <div class="dropdown menu">
+                                        <i class="mdi mdi-dots-vertical f-20" id="dropdownMenuButton02"
+                                            data-bs-toggle="dropdown"></i>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton02">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="badge rounded-pill">Abstract</div>
+                                    </div>
+                                </div>
+                                <div class="card-image mt-3">
+                                    <img src="{% static '/images/slider-blog/3.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Evolved Reality</h6>
+                                    <p class="f-14 text-orange">210 ETH</p>
+
+                                    <div class="profile-content align-items-center d-flex justify-content-start">
+                                        <div class="avatar-sm">
+                                            <img src="{% static '/images/slider/user/img-3.jpg' %}" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h6 class="fw-bold mb-0 ms-2 f-14">Kristin Watson</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item ">
+                            <div class="card">
+                                <div class="header d-flex">
+                                    <div class="dropdown menu">
+                                        <i class="mdi mdi-dots-vertical f-20" id="dropdownMenuButton"
+                                            data-bs-toggle="dropdown"></i>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="badge rounded-pill">Painting</div>
+                                    </div>
+                                </div>
+                                <div class="card-image mt-3">
+                                    <img src="{% static '/images/slider-blog/4.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Evolved Reality</h6>
+                                    <p class="f-14 text-orange">214 ETH</p>
+
+                                    <div class="profile-content align-items-center d-flex justify-content-start">
+                                        <div class="avatar-sm">
+                                            <img src="{% static '/images/slider/user/img-4.jpg' %}" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h6 class="fw-bold mb-0 ms-2 f-14">Kristin Watson</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item ">
+                            <div class="card">
+                                <div class="header d-flex">
+                                    <div class="dropdown menu">
+                                        <i class="mdi mdi-dots-vertical f-20" id="dropdownMenu"
+                                            data-bs-toggle="dropdown"></i>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="badge rounded-pill">Artwork</div>
+                                    </div>
+                                </div>
+                                <div class="card-image mt-3">
+                                    <img src="{% static '/images/slider-blog/5.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Evolved Reality</h6>
+                                    <p class="f-14 text-orange">136 ETH</p>
+
+                                    <div class="profile-content align-items-center d-flex justify-content-start">
+                                        <div class="avatar-sm">
+                                            <img src="{% static '/images/slider/user/img-5.jpg' %}" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h6 class="fw-bold mb-0 ms-2 f-14">Kristin Watson</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item ">
+                            <div class="card">
+                                <div class="header d-flex">
+                                    <div class="dropdown menu">
+                                        <i class="mdi mdi-dots-vertical f-20" id="dropdownMenuButton05"
+                                            data-bs-toggle="dropdown"></i>
+
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton05">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ms-auto">
+                                        <div class="badge rounded-pill">Abstract</div>
+                                    </div>
+                                </div>
+                                <div class="card-image mt-3">
+                                    <img src="{% static '/images/slider-blog/6.png' %}" alt="" class="img-fluid">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="fw-bold mb-0">Evolved Reality</h6>
+                                    <p class="f-14 text-orange">150 ETH</p>
+
+                                    <div class="profile-content align-items-center d-flex justify-content-start">
+                                        <div class="avatar-sm">
+                                            <img src="{% static '/images/slider/user/img-6.jpg' %}" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="profile-name">
+                                            <h6 class="fw-bold mb-0 ms-2 f-14">Kristin Watson</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                    </div>
+                    <!-- End slider -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end home -->
+
+
+
+    <!-- start explore -->
+    <section class="explore section bg-light px-4" id="explore">
+        <!-- start container -->
+        <div class="container">
+            <div class="row position-relative">
+                <div class="col-lg-12 p-0">
+                    <nav class="mt-5">
+                        <div class="heading float-start mt-3">
+                            <h2 class="fw-bold">Explore</h2>
+                        </div>
+
+                        <div class="nav nav-tabs align-items-center justify-content-center row" id="nav-tab"
+                            role="tablist">
+                            <button class="nav-link active text-uppercase col-md-2" id="nav-all-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab"
+                                aria-controls="nav-all" aria-selected="true"><span class="icon"><i
+                                        class="mdi mdi-plus f-24 align-middle"></i> All
+                                </span></button>
+
+                            <button class="nav-link text-uppercase col-md-2" id="nav-music-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-music" type="button" role="tab" aria-controls="nav-music"
+                                aria-selected="true"><span class="icon"> <i 
+                                    class="mdi mdi-gamepad-variant f-24 align-middle"></i> music
+                                </span></button>
+
+                            <button class="nav-link text-uppercase col-md-2" id="nav-art-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-art" type="button" role="tab" aria-controls="nav-art"
+                                aria-selected="true"><span class="icon"><i class="mdi mdi-brush f-24 align-middle"></i>
+                                    Art
+                                </span></button>
+                
+                            <button class="nav-link text-uppercase col-md-2" id="nav-memes-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-memes" type="button" role="tab" aria-controls="nav-memes"
+                                aria-selected="true"><span class="icon"><i class="mdi mdi-panda f-24 align-middle"></i>
+                                    Memes
+                                </span></button>
+
+                            <button class="nav-link text-uppercase col-md-2" id="nav-Collection-tab"
+                                data-bs-toggle="tab" data-bs-target="#nav-Collection" type="button" role="tab"
+                                aria-controls="nav-Collection" aria-selected="true"><span class="icon"><i
+                                        class="mdi mdi-collage f-24 align-middle"></i> Collectibles
+                                </span></button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="tab-content mt-5 pt-4" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                        <div class="row">
+                            {% if allpro %}
+                            {% for i in allpro %}
+                            <div class="col-lg-3 mt-4">
+                                <div class="tab-content p-4 border-0">
+                                    <div class="header d-flex align-items-center justify-content-start">
+                                        <div class="avatar-xs">
+                                            <img src="{{MEDIA_URL}}{{i.image1.url}}" alt=""
+                                                class="img-fluid rounded-circle">
+                                        </div>
+                                        <h6 class="mb-0 ms-2 fw-semibold text-muted f-14">{{i.creator}}</h6>
+                                    </div>
+                                    <div class="card-image mt-3">
+                                        <img src="{{MEDIA_URL}}{{i.image1.url}}" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="body-content mt-3">
+                                        <h6 class="fw-bold">{{i.name}}</h6>
+                                        <div class="d-flex">
+                                            <p class="text-muted"></p>
+                                            <p class="ms-auto text-muted">Price : <span class="text-success">{{i.price}}
+                                                    </span></p>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex mt-3 align-items-center">
+                                            <div class="history">
+                                                <i class="mdi mdi-restart f-20 align-middle"></i>View History
+                                            </div>
+                                            <div class="bid-button ms-auto">
+                                                <button class="btn btn-sm btn-primary rounded-pill">Bid</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                           
+                       
+                            
+                            
+                            
+
+                            <div class="mt-5">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-games" role="tabpanel" aria-labelledby="nav-games-tab">
+                        <div class="row">
+                            
+                            
+                            
+                            
+
+                            <div class="mt-5">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-art" role="tabpanel" aria-labelledby="nav-art-tab">
+                        <div class="row">
+                            
+                            
+                            
+
+                            <div class="mt-5">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-memes" role="tabpanel" aria-labelledby="nav-memes-tab">
+                        <div class="row">
+                            
+                            
+                            
+
+                            <div class="mt-5">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-Collection" role="tabpanel" aria-labelledby="nav-Collection-tab">
+                        <div class="row">
+                            
+
+                            
+
+                            <div class="mt-5">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end explore -->
+
+
+
+    <!-- start blog -->
+    <section class="blog-2 section" id="collection">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                
+                
+            </div>
+
+            <div class="row mt-5">
+                
+
+                
+
+                
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+
+    <!-- start slider-blog -->
+    <section class="section team bg-light" id="team">
+        <!-- start container-fluid -->
+        <div class="container-fluid p-0">
+            <!-- start container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold">Our Team Artists</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-start text-lg-end">
+                            <button class="btn btn-primary rounded-pill">View All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end container -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="team-slider mt-5 position-relative" id="team-slider">
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-1.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">@mazanov_sky...</h6>
+                                        <p class="mb-0 text-success fw-bold">2.56 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-2.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">@jimmy_dom...</h6>
+                                        <p class="mb-0 text-success fw-bold">1.32 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-3.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">
+                                            @Alvin_nov...</h6>
+                                        <p class="mb-0 text-success fw-bold">3.35 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-4.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">
+                                            @mucky_art...</h6>
+                                        <p class="mb-0 text-success fw-bold">0.85 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-5.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">@william_jamy...</h6>
+                                        <p class="mb-0 text-success fw-bold">2.84 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-6.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">@mazanov_sky...</h6>
+                                        <p class="mb-0 text-success fw-bold">4.20 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-7.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">@Joshua_Bren...</h6>
+                                        <p class="mb-0 text-success fw-bold">2.52 ETH</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- slider item -->
+
+                        <div class="item">
+                            <div class="card">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <div class="avatar position-relative">
+                                            <img src="images/slider/user/img-8.jpg" alt=""
+                                                class="img-fluid rounded-circle ">
+
+                                            <div class="profile-icon align-items-center">
+                                                <i class="mdi mdi-check text-white f-14"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-grow-1 ms-2">
+                                        <h6 class="mb-1">@mazanov_sky...</h6>
+                                        <p class="mb-0 text-success fw-bold">2.56 ETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                    </div>
+                    <!-- End slider -->
+                </div>
+            </div>
+        </div>
+        <!-- end container-fluid -->
+    </section>
+    <!-- end slider-blog -->
+
+
+
+    <!-- start cta -->
+    <section class="cta section ">
+        <!-- start container -->
+        <div class="container">
+            <div class="row align-items-center justify-content-start">
+                <div class="col-lg-6">
+                    <h1 class="text-white display-5 fw-bold">
+                        Discover, Create & Sell Digital Artworks.</h1>
+                    <p class="text-light f-16 mt-3">A place where you can create, sell and discover NFT's from a wide range on a single platform</p>
+                    <button class="btn btn-primary mt-3">Start Collection</button>
+                </div>
+                <div class="col-lg-4 offset-lg-2">
+                    <img src="images/cta/img.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end cta -->
+
+{% endblock %}
+
+
+     

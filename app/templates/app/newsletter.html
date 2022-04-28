@@ -1,0 +1,54 @@
+
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- start section -->
+    <section class="newsletter section bg-light">
+        <!-- start container -->
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb default mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="index.html" class="text-muted">Home</a>
+                            </li>
+                            <li class="breadcrumb-item active text-primary" aria-current="page">Newsletter</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="newsletter-item mt-5">
+                <div class="row align-items-center  justify-content-center">
+                    <div class="col-lg-6  inner-heading">
+                        <h1 class="display-5 fw-bold">Sign up for The NFT, Raroin newsletter!</h1>
+                        <p class="f-16 text-muted mt-4">Unit of data stored on a digital ledger, called a blockchain,
+                            that certifies a digital asset to be unique and therefore not interchangeable.
+                            Easiest place to buy and sell cryptocurrency.
+                            Sign up and get started today.
+                        </p>
+                        <div class="forum mt-4">
+                            <form class="form">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="Enter Your Email">
+                            </form>
+                        </div>
+                        <button class="btn btn-primary shadow mt-4">Subscribe</button>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="newsletter-image mt-4 mt-lg-0">
+                            <img src="images/inner-image/newsletter.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    {% endblock %}
+    
